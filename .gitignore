@@ -4,6 +4,7 @@ data/**/*.parquet
 data/raw/*
 data/processed/*
 data/parquet/*
+*.crc
 
 # Keep folders
 !data/raw/.gitkeep
