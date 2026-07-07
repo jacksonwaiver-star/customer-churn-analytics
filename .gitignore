@@ -1,22 +1,23 @@
-# Ignore CSV datasets
-*.csv
+# Raw and processed data
 data/**/*.csv
+data/**/*.parquet
+data/raw/*
+data/processed/*
+data/parquet/*
 
-# Ignore large/generated data folders
-data/raw/
-data/processed/
-data/parquet/
-
-# Keep folder structure if you add .gitkeep files
+# Keep folders
 !data/raw/.gitkeep
 !data/processed/.gitkeep
 !data/parquet/.gitkeep
 
-# Python junk
+# Python
 __pycache__/
 *.pyc
 .venv/
 .env
 
-# VS Code/settings
+# Notebooks
+.ipynb_checkpoints/
+
+# VS Code
 .vscode/
