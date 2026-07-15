@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Customer Churn Analytics</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f7fa;
+            color: #1f2937;
+        }
+
+        header {
+            background: #111827;
+            color: white;
+            padding: 42px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0 0 10px;
+            font-size: 36px;
+        }
+
+        header p {
+            margin: 0;
+            color: #d1d5db;
+            font-size: 17px;
+        }
+
+        main {
+            max-width: 1400px;
+            margin: 35px auto;
+            padding: 0 20px;
+        }
+
+        .summary {
+            background: white;
+            padding: 24px;
+            margin-bottom: 24px;
+            border-radius: 14px;
+            box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+        }
+
+        .summary h2 {
+            margin-top: 0;
+        }
+
+        .dashboard-container {
+            background: white;
+            padding: 16px;
+            border-radius: 14px;
+            box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+        }
+
+        .dashboard-container iframe {
+            display: block;
+            width: 100%;
+            height: 780px;
+            border: 0;
+            border-radius: 8px;
+        }
+
+        @media (max-width: 700px) {
+            header h1 {
+                font-size: 28px;
+            }
+
+            .dashboard-container iframe {
+                height: 600px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Customer Churn Analytics</h1>
+
+        <p>
+            Customer risk analysis and interactive Power BI dashboard
+        </p>
+    </header>
+
+    <main>
+        <section class="summary">
+            <h2>Executive Summary</h2>
+
+            <p>
+                Overall churn is 9.9%. New month-to-month customers
+                are the highest-risk segment, with a 34.4% churn rate.
+            </p>
+        </section>
+
+        <section class="dashboard-container">
+            <iframe
+                title="Customer Churn Analytics Dashboard"
+                src="https://app.powerbi.com/view?r=eyJrIjoiOWZhYjBkNWItZTk1Zi00NTE3LWE0M2MtZmUyNDE1MWZkNzgwIiwidCI6IjAzNDdkODlhLTAxNzQtNGRkMy1hZGViLTMzMzljODljMzVmNSIsImMiOjN9"
+                allowfullscreen>
+            </iframe>
+        </section>
+    </main>
+</body>
+</html>
